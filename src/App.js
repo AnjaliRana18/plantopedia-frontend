@@ -37,7 +37,10 @@ function App() {
         ></Route>
         <Route path="/terms" element={<Terms></Terms>}></Route>
         <Route path="/about" element={<About></About>}></Route>
-        <Route path="/contact" element={<Contact></Contact>}></Route>
+        <Route
+          path="/contact"
+          element={<Contact theme={theme}></Contact>}
+        ></Route>
         <Route path="/explore" element={<Explore></Explore>}></Route>
         <Route path="/showposts" element={<ShowPost></ShowPost>}></Route>
         <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>

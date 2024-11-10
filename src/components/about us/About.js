@@ -2,9 +2,16 @@ import React from "react";
 import style from "../about us/About.module.css";
 import aboutus1 from "../assets/aboutus1.png";
 import aboutus2 from "../assets/aboutus2.png";
-export default function About() {
+export default function About({ theme }) {
   return (
-    <div className={style.wrapper}>
+    <div
+      style={
+        theme === "light"
+          ? { backgroundColor: "rgb(250, 239, 223)" }
+          : { backgroundColor: "black" }
+      }
+      className={style.wrapper}
+    >
       <div className={style.container}>
         <div className={style.parentLeft}>
           <div className={style.contentLeft}>
